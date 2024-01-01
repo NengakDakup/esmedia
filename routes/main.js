@@ -4,7 +4,10 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    res.json({status: 'success'})
+    res.render('index', {
+        title: 'ES MEDIA - HOME',
+        route: 'home'
+    })
 });
 
 module.exports = router;
